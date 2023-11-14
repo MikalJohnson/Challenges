@@ -5,15 +5,16 @@ Prerequisites
 Node.js installed on your machine
 npm (Node Package Manager) installed on your machine
 
--- Installation
+-- Run
     1. Clone the repository to your local machine
+        - git clone
     2. Navigate to the project directory
     3. Install dependencies
+        - npm install
     4. Start the server
-
--- API Endpoints
-    '/stats'
-    Returns the minimum, maximum, and average altitude for the last 5 minutes.
-
-    '/health'
-    Provides health status based on the average altitude of the satellite over the last minute.
+        1. src/app.js
+        2. Access API Endpoints
+           Stats Example: curl http://localhost:3000/stats
+           Health Example: curl http://localhost:3000/health
+-- Unit Test
+    npm test
